@@ -1112,7 +1112,16 @@ body {
 #NameGame .cf-alert.error{ background:#ffebee; color:#b71c1c; border:1px solid #ef9a9a; }
 #NameGame .hidden{ display:none; }
 
-#NameGame .ng-leader-list{ display:grid; gap:1rem; }
+#NameGame .ng-leader-list{ display:grid; 
+	gap:1rem;/* Sets the maximum visible height to the height of 5 items (adjust 40px as needed) */
+    max-height: 200px; 
+        /* Crucial: Hides content that exceeds max-height and adds a scrollbar */
+    overflow-y: auto;
+        /* Optional: Improves performance on some browsers/devices */
+    will-change: scroll-position;
+        /* Optional: To make the list look nice */
+    padding-right: 5px; /* Add space to the right so the scrollbar doesn't touch the content */
+}
 #NameGame .ng-leader{ border:1px solid #ddd; border-radius:12px; background:#fafafa; padding:1rem 1rem 1.2rem; }
 #NameGame .ng-leader-row{ display:grid; grid-template-columns: 5ch 1fr auto; align-items:center; gap:1rem; margin-bottom:.4rem; }
 #NameGame .ng-leader-rank{ font-family:"Londrina Solid", system-ui, sans-serif; font-size:2rem; color: var(--timeline-accent-color, #D9665B); }
