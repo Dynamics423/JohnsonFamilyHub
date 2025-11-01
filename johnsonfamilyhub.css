@@ -1119,7 +1119,8 @@ body {
     overflow-y: auto;
         /* Optional: Improves performance on some browsers/devices */
     will-change: scroll-position;
-        /* Optional: To make the list look nice */
+    
+    /* Optional: To make the list look nice */
     padding-right: 5px; /* Add space to the right so the scrollbar doesn't touch the content */
 }
 #NameGame .ng-leader{ border:1px solid #ddd; border-radius:12px; background:#fafafa; padding:1rem 1rem 1.2rem; }
